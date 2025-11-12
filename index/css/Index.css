@@ -1,11 +1,4 @@
-body
-{
-	font-family: Microsoft Yahei,微软雅黑，宋体;
-	margin:0;
-	padding:0;
-	width:100%;
-	background:#404040;
-}
+
 /*头部标题*/
 .HeadLine
 {
@@ -76,9 +69,12 @@ body
 }
 .NavLine_L li
 {	
+	margin:0;
+	padding:0;
 	height:100%;
 	float:bottom;
 	font-size:20px;
+	list-style:none;
 
 }
 .NavLine_L li a
@@ -98,8 +94,11 @@ body
 }
 
 /*中间工作区*/
-.workplace_M
+.Workplace_M
 {
+	position:absolute;
+	top:168px;
+	left:230px;
 	margin-top:10px;
 	margin-left:5px;
 	padding:9px 9px;
@@ -108,7 +107,5 @@ body
 	overflow:hidden;
 	border:1px solid #e0e0e0;
 	text-align:center;
-	position:absolute;
-	left:200px;
 	
 }

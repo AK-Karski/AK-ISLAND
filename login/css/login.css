@@ -1,0 +1,59 @@
+
+/*中央窗口*/
+.Window_M
+{
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	margin:auto;
+	width:300px;
+	height:150px;
+	border:1px solid #e0e0e0;
+}
+.Window_M h1
+{
+	position:absolute;
+	top:20px;
+	left:50px;
+	font-size:25px;
+	font-weight:lighter;
+	color:#f0f0f0;
+	text-align:center;	
+}
+.Window_Botton
+{
+	position:absolute;
+	bottom:10px;
+	left:20px;
+	right:20px;
+	height:70px;
+}
+.Window_Botton li
+{
+	margin:3px 5px;
+	padding:5px;
+	width:110px;
+	height:40px;
+	border:0px solid #e0e0e0;
+	float:left;
+	font-size:20px;
+	font-weight:lighter;
+
+}
+.Window_Botton li a
+{
+	display:block;
+	color:#f0f0f0;
+	text-align:center;
+	text-decoration:none;
+	line-height:40px
+}
+.Window_Botton li:hover
+{
+	outline:1px solid #e0e0e0;
+}
+
+/*来访者基础信息获取*/
+.Window
