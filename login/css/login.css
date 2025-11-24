@@ -1,59 +1,167 @@
 
-/*中央窗口*/
-.Window_M
+:root
 {
+	--Body-Background-color:#404040;
+	--Window-Frame-color:#e0e0e0;
+	--Font-color:#e0e0e0;
+}
+
+
+
+/*中央窗口*/
+.Login_Window_M
+{	
 	position:absolute;
 	top:0;
 	bottom:0;
 	left:0;
 	right:0;
-	margin:auto;
+	
+	margin-top:210px;	
+	margin-bottom:210px;	
+	margin-left:auto;
+	margin-right:auto;
+	
 	width:300px;
-	height:150px;
-	border:1px solid #e0e0e0;
+	height:auto;
+	border:1px solid var(--Window-Frame-color);
+	
 }
-.Window_M h1
+.Login_Window_M h3
 {
 	position:absolute;
 	top:20px;
 	left:50px;
-	font-size:25px;
-	font-weight:lighter;
-	color:#f0f0f0;
+	/*font-size:25px;*/	
+	color:var(--Font-color);
 	text-align:center;	
 }
-.Window_Botton
+.Login_Window_Button
 {
 	position:absolute;
 	bottom:10px;
 	left:20px;
 	right:20px;
 	height:70px;
+	
 }
-.Window_Botton li
-{
-	margin:3px 5px;
-	padding:5px;
-	width:110px;
-	height:40px;
-	border:0px solid #e0e0e0;
-	float:left;
-	font-size:20px;
-	font-weight:lighter;
 
+.Login_Window_Button ul
+{
+	display: flex; 
+	justify-content: center;
+	align-items: center;
 }
-.Window_Botton li a
+
+.Login_Window_Button li
+{
+	margin:3% 5%;
+	padding:0px;
+	width:100px;
+	height:40px;
+	border:0px solid var(--Window-Frame-color);
+	float:left;
+	/*font-size:20px;*/	
+}
+.Login_Window_Button li a
 {
 	display:block;
-	color:#f0f0f0;
+	color:var(--Font-color);
 	text-align:center;
 	text-decoration:none;
 	line-height:40px
 }
-.Window_Botton li:hover
+.Login_Window_Button li:hover
 {
-	outline:1px solid #e0e0e0;
+/*	background-color:#a0a0a0;*/
+	outline:1px solid var(--Window-Frame-color);
+}
+.Login_Window_Button li a:hover
+{
+	
+ 	color:#c0c0c0;
 }
 
 /*来访者基础信息获取*/
-.Window
+.Login_Sheet_Window_M
+{		
+	margin-top:150px;	
+	margin-bottom:150px;	
+	margin-left:auto;
+	margin-right:auto;
+	padding:10px;
+	
+	width:300px;
+	height:auto;
+	border:1px solid var(--Window-Frame-color);	
+	
+
+}
+.Login_Sheet_Window_M h3
+{
+	width:100%;
+	height:auto;
+	text-align:center;
+}
+
+.Login_Sheet_Window_M form
+{
+	padding:5px;
+}
+
+
+input[type="text"]
+{
+	width:auto;
+	padding:10px;
+	margin:8px;
+	margin-left:15%;
+	margin-right:15%;
+	
+	border:1px solid var(--Window-Frame-color);
+	border-radius:4px;
+	background-color:var(--Body-Background-color);
+}
+input[type="text"]:focus
+{
+	outline:none;
+}
+
+input[type="password"]
+{
+	width:auto;
+	padding:10px;
+	margin:8px;
+	margin-left:15%;
+	margin-right:15%;
+	
+	border:1px solid var(--Window-Frame-color);
+	border-radius:4px;
+	background-color:var(--Body-Background-color);
+}
+
+input[type="password"]:focus
+{
+	outline:none;
+}
+
+.Login_Sheet_Window_M button
+{
+	width: 30%;
+	padding: 10px;
+	margin: 8px 0;
+	margin-left:35%;
+	margin-right:35%;
+	border:0px solid var(--Window-Frame-color);
+	border-radius: 4px;
+	font-size:20px;
+	color:var(--Font-color);
+	background-color:var(--Body-Background-color);
+}
+
+.Login_Sheet_Window_M button:hover
+{
+	font-size:20px;
+	color: #c0c0c0;
+	outline:1px solid var(--Window-Frame-color);
+}

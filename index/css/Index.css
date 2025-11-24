@@ -1,22 +1,31 @@
 
+:root
+{
+	--Body-Background-color:#404040;
+	--Window-Frame-color:#e0e0e0;
+	--Font-color:#e0e0e0;
+}
+
+
 /*头部标题*/
 .HeadLine
 {
 	position:absolute;
 	width:100%;
 	height:120px;
-	margin:0px;
-	padding:0px;
-	border:0px solid #000000;
-	background:#404040;
+	margin:0;
+	padding:0;
+	border:0 solid #var(--Window-Frame-color);
+	background-color:var(--Body-Background-color);
 }
 .HeadLine h1
 {
 	position:absolute;
-	bottom:10px;
+	bottom:6px;
 	left:10px;
-	font-size:30px;
-	color:#f0f0f0;
+	left:10px;
+	/*font-size:30px;*/	
+	color:var(--Font-color);
 }
 /*导航条*/
 .NavLine_T
@@ -26,37 +35,39 @@
 	right:0;
 	left:0;
 	width:100%;
-	height:47px;
+	min-width:1000px;
+	height:auto;
 	margin:0;
 	padding:0;
-	border-top:1px solid #e0e0e0;
-	border-bottom:1px solid #e0e0e0;
-	background-color:#404040;
+	border-top:1px solid var(--Window-Frame-color);
+	border-bottom:1px solid var(--Window-Frame-color);
+	background-color:var(--Body-Background-color);
 }
 .NavLine_T li
 {
-	margin:4px 10px;
+	margin:6px 10px;
 	padding:10px 20px;
+	height:auto;
 	float:left;
-	font-size:20px;
+	/*font-size:20px;*/	
 }
 .NavLine_T li a
 {
 	display:block;
-	color:#f0f0f0;
+	color:var(--Font-color);
 	text-align:center;
 	text-decoration:none;
 }
 .NavLine_T li:hover
 {
-	outline:1px solid #e0e0e0;
+	outline:1px solid var(--Window-Frame-color);
 }
 
 /*左侧栏目*/
 .NavLine_L
 {
 	position:absolute;
-	top:168px;
+	top:175px;
 	margin-top:10px;
 	margin-bottom:10px;
 	margin-left:5px;
@@ -64,32 +75,32 @@
 	width:200px;
 	height:auto;
 	overflow:hidden;
-	border:1px solid #e0e0e0;
+	border:1px solid var(--Window-Frame-color);
 	text-align:center;
 }
 .NavLine_L li
 {	
-	margin:0;
+	margin:15px;
 	padding:0;
-	height:100%;
-	float:bottom;
-	font-size:20px;
-	list-style:none;
+	width:auto;
+	height:auto;
+	/*font-size:20px;*/	
+	display: flex; /* 设置为Flex布局 */
+	justify-content: center; /* 水平居中 */
+	align-items: center;
 
 }
 .NavLine_L li a
 {	
-	width:190px;
-	color:#f0f0f0;
-	padding:10px 20px;
-	line-height:200%;
+	width:80%;
+	color:var(--Font-color);
+	padding:10px 0;
+	line-height:150%;
 	text-decoration:none;
 }
 .NavLine_L li:hover
 {
-	margin:0px 0px;
-	padding:0px 0px;
-	outline:1px solid #e0e0e0;
+	outline:1px solid var(--Window-Frame-color);
 	
 }
 
@@ -97,15 +108,42 @@
 .Workplace_M
 {
 	position:absolute;
-	top:168px;
+	top:175px;
+	bottom:auto;
 	left:230px;
-	margin-top:10px;
-	margin-left:5px;
+	margin:10px 10px;
 	padding:9px 9px;
-	width:50%;
-	height:100%;
-	overflow:hidden;
-	border:1px solid #e0e0e0;
+	width:700px;
+	height:1000px;
+
+	border:1px solid var(--Window-Frame-color);
 	text-align:center;
 	
+}
+.Workplace_M li
+{
+	margin:10px;
+	width:auto;
+	height:100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid var(--Window-Frame-color);
+	color:#e0e0e0;
+}
+
+/*底部条*/
+.BottomLine
+{
+	position:absolute;
+	top:1215px;
+	bottom:0;
+	width:100%;
+	height:100px;
+	margin:0;
+	padding:10px;
+	border-top:1px solid var(--Window-Frame-color);
+	background-color:var(--Body-Background-color);
+	color:var(--Body-Background-color);
+	box-sizing:border-box;
 }
