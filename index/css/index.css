@@ -5,25 +5,7 @@
 	--Window-Frame-color:#e0e0e0;
 	--Font-color:#e0e0e0;
 }
-.login_page
-{
-	position:absolute;
-	z-index:100;
-}
 
-body
-{
-	overflow:hidden;
-}
-
-.mask_layer
-{
-	position:absolute;
-	width:100%;
-	height:100%;
-	background-color:var(--Body-Background-color);
-	z-index:99;
-}
 
 /*头部标题*/
 .HeadLine
@@ -35,7 +17,6 @@ body
 	padding:0;
 	border:0 solid #var(--Window-Frame-color);
 	background-color:var(--Body-Background-color);
-	z-index:1;
 }
 .HeadLine h1
 {
@@ -45,7 +26,6 @@ body
 	left:10px;
 	/*font-size:30px;*/	
 	color:var(--Font-color);
-
 }
 /*导航条*/
 .NavLine_T
@@ -62,7 +42,6 @@ body
 	border-top:1px solid var(--Window-Frame-color);
 	border-bottom:1px solid var(--Window-Frame-color);
 	background-color:var(--Body-Background-color);
-	z-index:1;
 }
 .NavLine_T li
 {
@@ -98,7 +77,6 @@ body
 	overflow:hidden;
 	border:1px solid var(--Window-Frame-color);
 	text-align:center;
-	z-index:1;
 }
 .NavLine_L li
 {	
@@ -140,7 +118,6 @@ body
 
 	border:1px solid var(--Window-Frame-color);
 	text-align:center;
-	z-index:1;
 	
 }
 .Workplace_M li
@@ -169,5 +146,4 @@ body
 	background-color:var(--Body-Background-color);
 	color:var(--Body-Background-color);
 	box-sizing:border-box;
-	z-index:1;
 }
