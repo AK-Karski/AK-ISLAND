@@ -6,17 +6,28 @@
 		<link rel="stylesheet" href="reset.css">
 		<link rel="stylesheet" href="General model.css">
 		<link rel="stylesheet" href="login/css/login.css">
+		<script src="login/js/login.js"></script>
 	</head>
 	<body>
 		<div id="Login_Sheet_Window" class="Login_Sheet_Window_M">
 			<h3>你好~(:3)<br>
 				欢迎进入AK的岛~</h3><br>
-			<form>
-				<label for="VisitorName">名字：</label><br>
-				<input type="text" id="VisitorName" name="VisitorName"><br><br>
+			<form id="visitor_info" action="./php/visitor_info.php" method="post">
+				<label for="VisitorName">名字：</label>
+				
+				<h4 id="visitor_name_validate" class="validate_tip"></h4>
+				<!--来访者名字-->
+				<input type="text" id="VisitorName" name="VisitorName"><br>	
+				
 				<label for="VisitorEmail">邮箱：</label><br>
+				<h4 id="visitor_email_validate"class="validate_tip"></h4>
+				
+				<!--来访者邮箱-->
 				<input type="text" id="VisitorEmail" name="VisitorEmail"><br>
-				<button class="Login_Sheet_Window_M button">提交</button>
+				
+				<h4 id="sheet_submit" class="validate_tip"></h4>
+				<button type="button" class="Login_Sheet_Window_M button" onclick="visitor_info_validate()">提交</button>
+				<script>clear_tip()</script>
 			</form>
 		</div>
 	</body>

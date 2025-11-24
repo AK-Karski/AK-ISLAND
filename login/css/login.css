@@ -6,7 +6,10 @@
 	--Font-color:#e0e0e0;
 }
 
-
+body
+{
+	overflow:hidden;
+}
 
 /*中央窗口*/
 .Login_Window_M
@@ -99,6 +102,7 @@
 }
 .Login_Sheet_Window_M h3
 {
+	padding:5px 0px;
 	width:100%;
 	height:auto;
 	text-align:center;
@@ -109,15 +113,21 @@
 	padding:5px;
 }
 
+.validate_tip
+{
+	padding-right:20px;
+	text-align:right;
+}
 
 input[type="text"]
 {
 	width:auto;
 	padding:10px;
 	margin:8px;
-	margin-left:15%;
-	margin-right:15%;
+	margin-left:10%;
+	margin-right:10%;
 	
+	font-size:20px;
 	border:1px solid var(--Window-Frame-color);
 	border-radius:4px;
 	background-color:var(--Body-Background-color);
@@ -135,6 +145,7 @@ input[type="password"]
 	margin-left:15%;
 	margin-right:15%;
 	
+	font-size:20px;
 	border:1px solid var(--Window-Frame-color);
 	border-radius:4px;
 	background-color:var(--Body-Background-color);
