@@ -1,10 +1,12 @@
+
 //visitor表单信息合法性验证
 function visitor_info_validate()
 {
 	var name_flag=0,email_flag=0;
-	
+
 	var visitor_name = document.getElementById("VisitorName").value;
 	var visitor_email = document.getElementById("VisitorEmail").value;
+
 	
 	let name_validate = /^[a-zA-Z]\w{0,9}$/;
 	let email_validate = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -35,11 +37,13 @@ function visitor_info_validate()
 	{
 		email_flag=1;
 	}
-	if(name_flag&&email_flag)
+	if(name_flag==1&&email_flag==1)
 	{
-		var form=document.getElementById("visitor_info");
 		
+		var button_jump = document.getElementById("Login_Sheet_Window_M button");
+		button_jump.onclick=location.href=("index_r.html?visitor_name=<br>"+visitor_name);
 	}
+
 /*由于发现github无法直接使用post并且用api来传表单的话因为源代码是在库里
 而且这个过程也是由前端进行（压根没有能用的后端TT）然后会直接暴露token
 随后我意识到所谓的“访客信息”事实上只是用来为访客留言服务的，并不需要长期存储
@@ -72,6 +76,8 @@ function visitor_info_validate()
 	}
 	*/
 }
+
+
 //监听input窗口click事件清除提示
 function clear_tip()
 {

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="这里是黑岭网络的前端">
+		<!--<link rel="icon" type="xxx" href="xxx">-->
+		<title>BLACK RIDGE SYSTEM</title>
+		<link rel="preload" href="Fusion Pixel 12" as="font" type="font/woff2">
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="General model.css">
+		<link rel="stylesheet" href="index/css/index.css">
+		<script src="index/js/index.js"></script>
+	<body>
+		
+		<!--		<script>
+			document.body.style.width = window.screen.width;
+			document.body.style.height = window.screen.height;
+		</script>-->
+		<div id="mask_greet_index" class="mask_greet"></div>
+		<div id="window_greet_index" class="window_greet">
+			<div id="close_greet_index" class="close_button" 
+			onclick='close_window("window_greet_index","mask_greet_index")'>
+			关闭</div>
+			<h3 id="window_greet_index_h3"></h3>
+		</div>
+		
+		<!-- 必须得在被操作元素搭起来之后再调用函数操作该元素 -->
+		<script>greet()</script>
+		
+		<div id="Index_HeadLine" class="HeadLine">
+			<h1>BLACK RIDGE SYSTEM</h1>
+		</div>
+		<!--Navigation Line-Top-->
+		<div id="Index_NavLine_T" class="NavLine_T" >
+			<ul>
+				<li><a href="xxx"><h3>个人日志</h3></a>
+				<li><a href="xxx"><h3>来访记录</h3></a>
+				<li><a href="xxx"><h3>预备栏3</h3></a>
+			</ul>
+		</div>
+		<!--Navigation Line-Top-->
+		<div class="NavLine_L">
+			<ul>
+				<li><a href="xxx"><h3>测试版1</h3></a>
+				<li><a href="xxx"><h3>预备栏2</h3></a>
+				<li><a href="xxx"><h3>预备栏3</h3></a>
+			</ul>
+		</div>
+		<!--Workplace-Middle-->
+		<div id="Index_Workplace_M" class="Workplace_M">
+			<ul>
+				<li><h3>测试文本</h3></li>
+				<li><h3>测试文本</h3></li>
+				<li><h3>测试文本</h3></li>
+			</ul>
+		</div>
+		<div id="Index_BottomLine" class="BottomLine">
+			<h3>测试测试~</h3>
+		</div>
+	</body>
+</html>

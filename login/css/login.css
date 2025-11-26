@@ -28,12 +28,12 @@ body
 	width:300px;
 	height:auto;
 	border:1px solid var(--Window-Frame-color);
-	
+	border-radius: 4px;
 }
 .Login_Window_M h3
 {
 	position:absolute;
-	top:20px;
+	top:35px;
 	left:50px;
 	/*font-size:25px;*/	
 	color:var(--Font-color);
@@ -63,6 +63,7 @@ body
 	width:100px;
 	height:40px;
 	border:0px solid var(--Window-Frame-color);
+	border-radius: 4px;
 	float:left;
 	/*font-size:20px;*/	
 }
@@ -97,7 +98,7 @@ body
 	width:300px;
 	height:auto;
 	border:1px solid var(--Window-Frame-color);	
-	
+	border-radius: 4px;
 
 }
 .Login_Sheet_Window_M h3
